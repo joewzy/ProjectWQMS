@@ -178,8 +178,10 @@ float myturb(){
 senseTurbidity = volt5;    //senseRawValue * (5.0 / 1024.0); //Convert analog data from 0 -1024 to voltage 0 - 5v;
 Serial.print("TURBIDITY VALUE:  "); //Print the output data to the serial
 Serial.print(senseTurbidity);
+Serial.print("\n");
 return senseTurbidity;
 delay(1000);
+
  // increased turbidity, our voltage drops 
 
   if (senseTurbidity>3.2 ){
